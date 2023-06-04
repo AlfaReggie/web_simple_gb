@@ -9,25 +9,22 @@ Cоздать функцию greeting, которая принимает в ка
 
 
 
-var user_name = prompt("Enter your name: ")
-var today = new Date();
-var now = today.getHours();
+let user_name = prompt("Enter your name: ")
+let today = new Date();
+let now = today.getHours();
 
-alert(greeting(user_name, now))
+greeting(user_name, now);
 
+function greeting(name, time) {
 
- function greeting(name, time) {
-
-    var res = ''
+    let res = ''
 
     if ((Number.parseInt(time) > 4) && (Number.parseInt(time) < 10)) {
         res += name + ", Good morning!"
-    }
-    else if (Number.parseInt(time) < 18) {
+    } else if (Number.parseInt(time) < 18) {
         res += name + ", Hello!"
-    }
-    else {
+    } else {
         res += name + ", Good evening!"
     }
-    return res;
- }    
+    console.log(res);
+}    

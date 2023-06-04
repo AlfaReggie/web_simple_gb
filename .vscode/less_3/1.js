@@ -24,5 +24,5 @@ var fahrenheit = translation(celsius);
 alert("Degrees celsius: " + celsius.toFixed(2) + "\nDegrees fahrenheit: " + fahrenheit.toFixed(2));
 
 function translation(cels) {
-    return ((9 / 5) * cels + 32);
+    return (9 / 5) * cels + 32;
 }
